@@ -5,7 +5,7 @@
   tasks:
     - name: Launch EC2 Instance
       ec2_instance:
-        instance_type: t2_micro
+        instance_type: t2.micro
         image_id: ami-04e5276ebb8451442
         region: us-east-1
         key_name: devops.pem
