@@ -56,8 +56,9 @@
       shell: usermod -a -G docker ec2-user
 
     - name: Fetch eshop from git
-      git: 'https://github.com/mpsenicka/vse-devops-project-app.git'
-      dest: ./app
+      git:
+        repo: 'https://github.com/mpsenicka/vse-devops-project-app.git'
+        dest: ./app
 
     - name: Build Eshop Docker image
       docker_image:
